@@ -4,3 +4,5 @@ node_modules/
 # Local agent tooling installed for this environment
 .agents/
 skills-lock.json
+
+dist/

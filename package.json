@@ -1,1 +1,13 @@
-{"name":"jr-transporte-site","version":"1.0.0","private":true,"scripts":{"build:css":"tailwindcss -i ./src/input.css -o ./assets/styles.css --minify","serve":"python3 -m http.server 4173","install":"npm ci --ignore-scripts --no-audit --no-fund"},"devDependencies":{"tailwindcss":"3.4.17"}}
+{
+  "name": "jr-transporte-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
+    "serve": "python3 -m http.server 4173",
+    "build": "npm run build:css && mkdir -p dist/assets && cp index.html favicon.svg dist/ && cp assets/styles.css assets/script.js dist/assets/"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
