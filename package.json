@@ -5,7 +5,8 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
     "serve": "python3 -m http.server 4173",
-    "build": "npm run build:css && mkdir -p dist/assets && cp index.html favicon.svg dist/ && cp assets/styles.css assets/script.js dist/assets/"
+    "build": "npm run build:css && mkdir -p dist/assets && cp index.html favicon.svg dist/ && cp assets/styles.css assets/script.js dist/assets/",
+    "deploy": "npm run build && npx wrangler deploy"
   },
   "devDependencies": {
     "tailwindcss": "3.4.17"
