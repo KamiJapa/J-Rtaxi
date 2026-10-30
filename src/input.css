@@ -55,6 +55,7 @@
  .region h2 { @apply text-5xl; }
  .fleet-grid { @apply grid grid-cols-2 gap-10; }
  .fleet-photo { @apply mb-6 block aspect-[16/9] w-full border border-slate-200 object-cover object-center; }
+ .fleet-photo-sedan { @apply aspect-[4/3] bg-paper object-contain; }
  .fleet-item.partner { @apply border-l border-gold pl-8; }
  .fleet-item .overline { @apply mb-3; }
  .clients { @apply bg-paper; }
