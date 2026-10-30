@@ -53,7 +53,7 @@
  .region-inner p { @apply text-lg leading-8 text-slate-200; }
  .region-inner strong { @apply font-normal text-white; }
  .region h2 { @apply text-5xl; }
- .fleet-grid { @apply grid grid-cols-2 gap-10; }
+ .fleet-grid { @apply grid grid-cols-3 gap-8; }
  .fleet-photo { @apply mb-6 block aspect-[16/9] w-full border border-slate-200 object-cover object-center; }
  .fleet-item.partner { @apply border-l border-gold pl-8; }
  .fleet-item .overline { @apply mb-3; }
@@ -77,6 +77,7 @@
  .sr-only { @apply absolute h-px w-px overflow-hidden whitespace-nowrap; clip: rect(0,0,0,0); }
  a:focus-visible,button:focus-visible { @apply outline outline-2 outline-offset-4 outline-gold; }
 }
+@media(max-width:960px){ .fleet-grid { @apply grid-cols-2; } .fleet-item.partner { @apply border-l-0 border-t border-gold pl-0 pt-8; } }
 @media(max-width:700px){
  .container { @apply px-5; }
  .header-inner { @apply min-h-16; }

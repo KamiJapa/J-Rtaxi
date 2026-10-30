@@ -5,7 +5,7 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
     "serve": "python3 -m http.server 4173",
-    "build": "npm run build:css && rm -rf dist && mkdir -p dist/assets && cp index.html favicon.svg robots.txt sitemap.xml dist/ && cp assets/styles.css assets/script.js assets/carro-taxi-rio-preto.webp assets/van-parceira.webp dist/assets/",
+    "build": "npm run build:css && rm -rf dist && mkdir -p dist/assets && cp index.html favicon.svg robots.txt sitemap.xml dist/ && cp assets/styles.css assets/script.js assets/corolla-cross-preto.webp assets/commander-taxi.webp assets/van-parceira.webp dist/assets/",
     "deploy": "npm run build && npx wrangler deploy"
   },
   "devDependencies": {
