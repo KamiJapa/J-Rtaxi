@@ -73,6 +73,7 @@
  .footer-inner p { @apply text-sm leading-6 text-slate-600; }
  .footer-inner > a:last-child { @apply text-sm; }
  .copyright { @apply mt-10 border-t border-slate-300 pt-5 text-xs text-slate-500; }
+ .footer-names { @apply mt-8 text-center text-xs tracking-wide text-slate-500; }
  .skip-link { @apply absolute left-4 top-4 z-50 -translate-y-20 bg-white px-4 py-3 text-navy; }
  .skip-link:focus { @apply translate-y-0; }
  .sr-only { @apply absolute h-px w-px overflow-hidden whitespace-nowrap; clip: rect(0,0,0,0); }
